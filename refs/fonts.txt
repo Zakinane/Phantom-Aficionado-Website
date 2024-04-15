@@ -1,0 +1,2 @@
+- Header Font: Earwig Factory on DaFont.
+- Body Text Font (p5hatty) by HattyMikune and ToxicDevil.
