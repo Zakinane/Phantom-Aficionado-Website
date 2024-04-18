@@ -1,33 +1,42 @@
-body {
+@media screen and (max-device-width: 767px) and (max-width: 767px) {
+}
+
+@media screen and (min-device-width: 768px) and (min-width: 768px) {
+  /*PC*/
+  body {
     margin: 0px;
-    display: grid;
-    height: 100vh; 
-    grid-template-rows: auto 15%;
-    background-image: url(images/cercleqRouges.png);
+    background-image: url(images/cercleqRougesTst.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-}
-header{
-    padding-top: 80px;
-    padding-bottom: 80px;
+  }
+  .grid {
+    display: grid;
+    height: 100vh;
+    grid-template-rows: 90% 10%;
+  }
+  #phansiteLogo {
+    width: 450px;
+    margin-top: 60px;
+    z-index: 100;
+  }
+  header {
+    align-items: baseline;
     display: flex;
     justify-content: center;
-    align-items:center;
-    grid-row: 1;
-}
-#phansiteLogo{
-    width: 400px;
-}
-footer{
-    grid-row: 2;
-}
-.credits{
-    color: white;
-}
-a:link{
- color: greenyellow;
-}
-.bottomTxt{
-    font-family: 'Arsenal';
+  }
+  #dechire {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+  }
+  .creditsCont {
+    position: fixed;
+    width: 100%;
+  }
+  .credits {
+    width: 20%;
+    z-index: 101;
+    bottom: 100%;
+  }
 }
