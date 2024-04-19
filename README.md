@@ -1,6 +1,7 @@
 # The Phan-site
-"There are probably a lot of people who have high hopes for the Phantom Thieves' next move. So I've also implemented an anonymous poll on the site. 
-"Do you believe in the Phantom Thieves, or not?""
+"There are probably a lot of people who have high hopes for the Phantom Thieves' next move. So I've also implemented an anonymous poll on the site."
+</br>
+<i>"Do you believe in the Phantom Thieves, or not?"</i>
 
 <h1><i>❗ STILL IN BETA ❗</i></h2>
 
