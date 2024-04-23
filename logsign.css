@@ -1,0 +1,52 @@
+@media screen and (max-device-width: 767px) and (max-width: 767px) {
+}
+
+@media screen and (min-device-width: 768px) and (min-width: 768px) {
+  body {
+    margin: 0px;
+    color: white;
+    font-family: 'arsenal';
+    font-weight: bold;
+  }
+  .grid {
+    display: grid;
+    height: 100vh;
+    grid-template-rows: auto auto 70px;
+  }
+  header {
+    background-image: url(images/cercleqRouges.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #phansiteLogo {
+    width: 450px;
+    margin: 40px;
+    z-index: 100;
+  }
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+  }
+  main div a img{
+    width: 400px;
+  }
+  .logsignGrid {
+    display: grid;
+    align-items: center;
+    gap: 20px;
+    justify-items: center;
+    grid-template-columns: repeat(3, auto);
+  }
+  footer {
+    display: flex;
+    background-color: #a52a2a;
+    justify-content: center;
+    align-items: center;
+  }
+}
