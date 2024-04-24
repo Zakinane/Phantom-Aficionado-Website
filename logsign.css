@@ -7,11 +7,12 @@
     color: white;
     font-family: 'arsenal';
     font-weight: bold;
+    background-color: black;
   }
   .grid {
     display: grid;
     height: 100vh;
-    grid-template-rows: auto auto 70px;
+    grid-template-rows: auto 120px 70px;
   }
   header {
     background-image: url(images/cercleqRouges.png);
@@ -21,14 +22,17 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
   }
   #phansiteLogo {
+    position: relative;
     width: 450px;
     margin: 40px;
-    z-index: 100;
+    z-index: 1000;
   }
   main {
-    display: flex;
+    margin-bottom: 70px;
+    display: flex;  
     justify-content: center;
     align-items: center;
     background-color: black;
@@ -37,15 +41,25 @@
     width: 400px;
   }
   .logsignGrid {
+    z-index: 1;
     display: grid;
     align-items: center;
     gap: 20px;
     justify-items: center;
     grid-template-columns: repeat(3, auto);
   }
+  #dechireBlanc{
+    position: absolute;
+    bottom: 170px;
+    width: 100vw;
+    z-index: 0;
+  }
   footer {
     display: flex;
-    background-color: #a52a2a;
+    background-image: url(images/basRouge.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     justify-content: center;
     align-items: center;
   }
