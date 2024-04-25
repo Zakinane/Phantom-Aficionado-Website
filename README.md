@@ -7,3 +7,5 @@
 
 <h2>Test the site ! </h2> 
 https://zakinane.github.io/Phantom-Aficionado-Website/
+
+<H6>This site is a fanmade project, all rights reserved to Atlus</H6>
