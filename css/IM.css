@@ -1,4 +1,7 @@
-body {
+@font-face {
+    font-family: "Earwig factory";
+    src: url(../refs/earwig\ factory\ rg.otf);
+}body {
   margin: 0px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   background-color: rgb(174, 8, 8);
@@ -41,7 +44,7 @@ body {
 /*ZAK DU FUTUR ESSAYES D'IMAGINER UN GRID AVEC 4 CASES : 1er New 2eme Nm 3eme Photo 4eme txt et tu deplaces avec jsp*/
 .message {
     display: grid;
-    grid-template-columns: 50px auto;
+    grid-template-columns: 100px auto;
     background-color: #000;
     color: #fff;
     margin-bottom: 10px;
@@ -69,13 +72,12 @@ body {
 }
 
 .username {
-    color: black;
+    font-family: "Earwig factory";
+    color: white;
   display: inline-block;
-  background-color: #fff;
   padding: 2px 5px;
   margin-right: 5px;
-  font-size: 14px;
-  font-weight: bold;
+  font-size: 25px;
 }
 .content p {
   margin: 0;
