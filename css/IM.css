@@ -38,7 +38,7 @@ body {
   padding: 20px;
   background-color: antiquewhite;
 }
-
+/*ZAK DU FUTUR ESSAYES D'IMAGINER UN GRID AVEC 4 CASES : 1er New 2eme Nm 3eme Photo 4eme txt et tu deplaces avec jsp*/
 .message {
     display: grid;
     grid-template-columns: 50px auto;
