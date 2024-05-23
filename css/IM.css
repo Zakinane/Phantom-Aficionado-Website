@@ -1,0 +1,114 @@
+body {
+  margin: 0px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-color: rgb(174, 8, 8);
+}
+.title {
+  color: white;
+  position: fixed;
+  width: 40px;
+  font-size: 80px;
+  rotate: -10deg;
+}
+.background-IM {
+  position: fixed;
+  margin: 5px 0px 0px 10px;
+  top: 0;
+  left: 0;
+  -webkit-text-stroke-width: 15px;
+  -webkit-text-stroke-color: black;
+  z-index: 1;
+}
+#IM {
+  margin: 5px 0px 0px 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.messages-container {
+  padding: 20px; /*idk why it fixes the position of IM*/
+}
+.messages {
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
+  background-color: antiquewhite;
+}
+
+.message {
+    display: grid;
+    grid-template-columns: 50px auto;
+    background-color: #000;
+    color: #fff;
+    margin-bottom: 10px;
+    padding: 10px;
+    position: relative;
+    width: 250px;
+  }
+.NEW::before {
+  content: "NEW";
+  background-color: white;
+  color: red;
+  padding: 2px 5px;
+  position: absolute;
+  left: -20px;
+  top: 0;
+  rotate: -20deg;
+  font-size: 10px;
+  z-index: 2;
+}
+.NEW{
+    background-color: red;
+}
+.OLD{
+    color: gray;
+}
+
+.username {
+    color: black;
+  display: inline-block;
+  background-color: #fff;
+  padding: 2px 5px;
+  margin-right: 5px;
+  font-size: 14px;
+  font-weight: bold;
+}
+.content p {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-container {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  bottom: 30px;
+  justify-content: center;
+}
+.navbar {
+  background-color: black;
+  color: white;
+  display: grid;
+  justify-items: center;
+  padding: 10px;
+  grid-template-columns: 50px 50px 50px 50px;
+  width: 200px;
+  box-shadow: -1px 42px 381px 150px rgba(0, 0, 0, 0.79);
+  -webkit-box-shadow: -1px 42px 381px 150px rgba(0, 0, 0, 0.79);
+  -moz-box-shadow: -1px 42px 381px 150px rgba(0, 0, 0, 0.79);
+}
+#nbr-notif {
+  color: red;
+  background-color: white;
+  position: fixed;
+  margin-left: 70px;
+  rotate: -7deg;
+}
+#icon {
+  width: 40px;
+  height: 40px;
+}
