@@ -1,0 +1,93 @@
+@media screen and (max-width: 768px) {
+  body {
+    background-image: url(/images/cercleqRougesTst.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+  }
+  .grid {
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    grid-template-rows: auto auto auto;
+  }
+  #phansiteLogo {
+    width: 450px;
+    margin-top: 60px;
+    z-index: 100;
+  }
+  header {
+    align-items: baseline;
+    display: flex;
+    justify-content: center;
+  }
+  #dechire {
+    display: none;
+  }
+
+  .creditsCont {
+    position: fixed;
+    top: 500px;
+    width: 100%;
+  }
+  .credits {
+    width: 30%;
+    z-index: 101;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    margin: 0px;
+    background-image: url(images/cercleqRougesTst.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .grid {
+    display: grid;
+    height: 100vh;
+    grid-template-rows: auto auto;
+  }
+  #phansiteLogo {
+    width: 450px;
+    margin-top: 60px;
+    z-index: 100;
+  }
+  header {
+    align-items: baseline;
+    display: flex;
+    justify-content: center;
+  }
+  #dechire {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    animation: welcome 1s cubic-bezier(0.33, 0.98, 0, 1);
+  }
+  @keyframes welcome {
+    from {
+      left: 1000px;
+    }
+    to {
+      left: 0px;
+    }
+  }
+
+  .creditsCont {
+    position: fixed;
+    top: 500px;
+    width: 100%;
+  }
+  .credits {
+    width: 10%;
+    z-index: 101;
+  }
+}

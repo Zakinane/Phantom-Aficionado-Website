@@ -1,0 +1,8 @@
+@font-face {
+  font-family: "Earwig factory";
+  src: url(../refs/earwig\ factory\ rg.otf);
+}
+body {
+  margin: 0px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}

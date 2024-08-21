@@ -1,0 +1,537 @@
+@font-face {
+  font-family: "Earwig factory";
+  src: url(../refs/earwig\ factory\ rg.otf);
+}
+
+* {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  touch-action: manipulation;
+  -ms-touch-action: none;
+  user-select: none;
+  overscroll-behavior-y: contain;
+}
+
+body {
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  margin: 0px;
+}
+hr{
+  position: relative;
+  justify-self: center;
+  width: 330px;
+  bottom: 15px;
+  border: red solid 1px;
+}
+.container {
+  display: flex;
+  width: 400vw;
+  height: 100vh;
+  transition: transform 0.5s ease;
+}
+
+.page {
+  width: 100vw;
+  height: 100vh;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+button {
+  padding: 8px;
+  background-color: rgb(244, 102, 138);
+  border-color: rgb(240, 38, 89);
+  color: white;
+  font-weight: bold;
+  border-radius: 10px;
+  width: 80vw;
+}
+
+button:active {
+  background-color: rgb(197, 81, 110);
+}
+
+footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.nav-icons {
+  clip-path: polygon(6% 6%, 92% 0, 97% 96%, 8% 90%);
+  background-color: black;
+  display: flex;
+  padding: 10px 30px;
+  gap: 10px;
+  -webkit-tap-highlight-color: transparent;
+  z-index: 2;
+}
+
+.icon {
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  -webkit-tap-highlight-color: transparent;
+}
+.icon.active {
+  transform: scale(1.4);
+}
+
+.nav-border {
+  clip-path: polygon(6% 6%, 92% 0, 98% 96%, 7% 90%);
+  background-color: white;
+  position: fixed;
+  width: 230px;
+  height: 60px;
+  bottom: 5px;
+  z-index: 1;
+}
+
+.nav-shadow {
+  box-shadow: -1px 72px 281px 150px rgba(0, 0, 0, 0.79);
+  position: fixed;
+  width: 100%;
+  z-index: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#page1 {
+  background-color: rgb(0, 0, 0);
+
+  .search-bar {
+    clip-path: polygon(0 0, 96% 22%, 94% 77%, 1% 92%);
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    background-color: black;
+    width: 90vw;
+    height: 40px;
+    margin: 15px;
+    position: relative;
+    z-index: 2;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+  }
+  .search-bar input {
+    border: none;
+    background: transparent;
+    color: white;
+    font-size: 18px;
+    width: 100%;
+    outline: none;
+  }
+  .search-bar .search-icon {
+    margin-right: 25px;
+    width: 20px;
+    color: white;
+  }
+  .search-bar-border {
+    position: fixed;
+    clip-path: polygon(0 0, 96% 22%, 94% 77%, 1% 92%);
+    background-color: rgb(78, 78, 78);
+    width: 95vw;
+    height: 55px;
+    margin: 7px;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    box-sizing: border-box;
+    padding: 20px;
+  }
+
+  .background-title {
+    position: fixed;
+    background-color: black;
+    width: 100vw;
+    height: 130px;
+    z-index: 100;
+  }
+  .title {
+    color: white;
+    position: fixed;
+    width: 40px;
+    font-size: 60px;
+    rotate: -10deg;
+  }
+  #PHORUM {
+    margin: 5px 0px 0px 10px;
+    padding: 30px 0px;
+    position: fixed;
+    top: -20px;
+    left: 0;
+  }
+
+  .messages-container {
+    padding: 30px; 
+  }
+  .messages {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+  /*ZAK DU FUTUR ESSAYES D'IMAGINER UN GRID AVEC 4 CASES : 1er New 2eme Nm 3eme Photo 4eme txt et tu deplaces avec jsp*/
+  .message {
+    display: grid;
+    grid-template-columns: 100px auto;
+    color: #fff;
+    margin-bottom: 10px;
+    padding: 10px;
+    position: relative;
+  }
+  .NEW::before {
+    content: "NEW";
+    background-color: white;
+    color: red;
+    padding: 2px 5px;
+    position: absolute;
+    left: -20px;
+    top: 0;
+    rotate: -20deg;
+    font-size: 10px;
+    z-index: 2;
+  }
+  .NEW {
+    background-color: red; /*Marche pas :(*/
+  }
+  .OLD {
+    color: gray;
+  }
+
+  .username {
+    font-family: "Earwig factory";
+    color: white;
+    display: inline-block;
+    padding: 2px 5px;
+    margin-right: 5px;
+    font-size: 25px;
+  }
+  .content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 5px 20px;
+    background-color: #900a0a;
+    color: #fff;
+  }
+
+  .navbar-container {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    bottom: 30px;
+    justify-content: center;
+  }
+  .navbar {
+    background-color: black;
+    color: white;
+    display: grid;
+    justify-items: center;
+    padding: 10px;
+    grid-template-columns: 50px 50px 50px 50px;
+    width: 200px;
+    box-shadow: -1px 42px 381px 150px rgba(0, 0, 0, 0.79);
+    -webkit-box-shadow: -1px 42px 381px 150px rgba(0, 0, 0, 0.79);
+    -moz-box-shadow: -1px 42px 381px 150px rgba(0, 0, 0, 0.79);
+  }
+  #nbr-notif {
+    color: red;
+    background-color: white;
+    position: fixed;
+    margin-left: 70px;
+    rotate: -7deg;
+  }
+  #icon {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#page2 {
+  background-color: #bf0a0a;
+  background-image: url(../images/background-poll.png);
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+
+  #POLL {
+    position: fixed;
+    top: -320px;
+    left: -80px;
+    z-index: 2;
+  }
+
+  .title {
+    color: white;
+    position: fixed;
+    width: 40px;
+    font-size: 80px;
+    rotate: -12deg;
+  }
+  .sub-title {
+    color: white;
+    display: flex;
+    margin-left: 80px;
+    width: 200px;
+    font-size: 30px;
+  }
+  .background-POLL {
+    position: fixed;
+    top: -320px;
+    left: -80px;
+    -webkit-text-stroke-width: 22px;
+    -webkit-text-stroke-color: black;
+    z-index: -1;
+  }
+  .background-WEEK {
+    position: fixed;
+    display: flex;
+    width: 200px;
+    -webkit-text-stroke-width: 15px;
+    -webkit-text-stroke-color: black;
+    z-index: -1;
+  }
+  .poll-container {
+    width: 95%;
+    text-align: center;
+    padding: 20px;
+    border-radius: 15px;
+    position: relative;
+  }
+
+  .poll-question {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .poll-result {
+    font-size: 40px;
+    font-weight: bold;
+    margin: 20px 0;
+    color: #fbc02d;
+  }
+  .poll-percentage {
+    background: linear-gradient(rgb(252, 206, 4), rgb(255, 128, 1));
+    background-clip: text;
+    color: transparent;
+  }
+
+  .poll-bar {
+    clip-path: polygon(1% 13%, 96% 5%, 98% 98%, 0 81%);
+    background-color: black;
+    height: 40px;
+    border-radius: 5px;
+  }
+  .poll-bar-border{
+    clip-path: polygon(1% 13%, 96% 5%, 98% 98%, 0 81%);
+    background-color: white;
+    overflow: hidden;
+    position: relative;
+    padding: 7px;
+    margin-bottom: 40px;
+  }
+
+  .poll-bar-yes {
+    background-color: red;
+    height: 100%;
+  }
+
+  .poll-options {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+
+  .poll-btn {
+    background-color: #900a0a;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .poll-btn-border{
+    position: relative;
+    width: 200px;
+    background-color: white;
+    padding: 5px;
+    margin: 0px 20px;
+  }
+  #poll-btn-yes{
+    clip-path: polygon(0 0, 96% 18%, 95% 77%, 8% 100%);
+  }
+  #poll-btn-no{
+    clip-path: polygon(0 16%, 100% 0, 96% 98%, 0 81%);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#page3 {
+  background-color: rgba(82, 15, 11, 0.877);
+}
+
+#page4 {
+  background-color: rgb(174, 8, 8);
+  .background-title {
+    position: fixed;
+    background-color: rgb(174, 8, 8);
+    width: 100vw;
+    height: 100px;
+    z-index: 100;
+  }
+  .title {
+    color: white;
+    position: fixed;
+    width: 40px;
+    font-size: 80px;
+    rotate: -10deg;
+  }
+  .background-IM {
+    position: fixed;
+    margin: 5px 0px 0px 10px;
+    top: 0;
+    left: 0;
+    -webkit-text-stroke-width: 15px;
+    -webkit-text-stroke-color: black;
+    z-index: 1;
+  }
+  #IM {
+    margin: 5px 0px 0px 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+  }
+
+  .messages-container {
+    padding: 20px; /*idk why it fixes the position of IM*/
+  }
+  .messages {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  .message {
+    display: grid;
+    grid-template-columns: 100px auto;
+    background-color: #000;
+    color: #fff;
+    margin-bottom: 10px;
+    padding: 10px;
+    position: relative;
+    width: 250px;
+  }
+  .NEW::before {
+    content: "NEW";
+    background-color: white;
+    color: red;
+    padding: 2px 5px;
+    position: absolute;
+    left: -20px;
+    top: 0;
+    rotate: -20deg;
+    font-size: 10px;
+    z-index: 2;
+  }
+  .NEW {
+    background-color: red;
+  }
+  .OLD {
+    color: gray;
+  }
+
+  .username {
+    font-family: "Earwig factory";
+    color: white;
+    display: inline-block;
+    padding: 2px 5px;
+    margin-right: 5px;
+    font-size: 25px;
+  }
+  .content p {
+    margin: 0;
+    padding: 0;
+  }
+
+  #nbr-notif {
+    color: red;
+    background-color: white;
+    position: fixed;
+    margin-left: 70px;
+    rotate: -7deg;
+  }
+  #icon {
+    width: 40px;
+    height: 40px;
+  }
+}
+
