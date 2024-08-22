@@ -149,7 +149,6 @@ footer {
 
 
 
-
 #page1 {
   background-color: rgb(0, 0, 0);
 
@@ -198,7 +197,7 @@ footer {
     position: fixed;
     background-color: black;
     width: 100vw;
-    height: 130px;
+    height: 143px;
     z-index: 100;
   }
   .title {
@@ -218,21 +217,23 @@ footer {
 
   .messages-container {
     padding: 20px; 
+    overflow-y:auto;
+    scrollbar-color: #760101 #580303;
+    scrollbar-width: thin;
   }
   .messages {
     margin-top: 100px;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    padding: 20px;
+    padding: 15px;
   }
 
   .message {
     display: grid;
-    grid-template-columns: 70px auto;
+    grid-template-columns: 70px auto 35px;
     color: #fff;
     margin-bottom: 0px;
-    padding: 10px;
+    padding: 10px 5px;
     position: relative;
   }
   .NEW::before {
@@ -267,6 +268,7 @@ footer {
     rotate: -7deg;
   }
   .content {
+    word-break: break-all;
     font-size: 12px;
     position:relative;
     clip-path: polygon(0 16%, 100% 0, 91% 100%, 6% 86%);
@@ -277,7 +279,7 @@ footer {
     padding: 5px 20px;
     background-color: #fa1111a1;
     max-width: 100vw;
-    z-index: 12;
+    z-index: 10;
   }
   .content1{
     clip-path: polygon(0 21%, 89% 0, 95% 97%, 6% 88%);
@@ -293,37 +295,15 @@ footer {
     background-color: #fa1111a1;
     max-width: 100vw;
   }
-
-  .navbar-container {
+  
+  .nbr-posts{
+    color: rgb(195, 194, 194);
+    font-size: 10px;
+    direction: rtl;
     display: flex;
-    position: fixed;
-    width: 100%;
-    bottom: 30px;
-    justify-content: center;
+    align-items: center;
   }
-  .navbar {
-    background-color: black;
-    color: white;
-    display: grid;
-    grid-template-columns: 50px 50px 50px 50px;
-    justify-items: center;
-    padding: 10px;
-    width: 200px;
-    box-shadow: -1px 42px 381px 150px rgba(0, 0, 0, 0.79);
-    -webkit-box-shadow: -1px 42px 381px 150px rgba(0, 0, 0, 0.79);
-    -moz-box-shadow: -1px 42px 381px 150px rgba(0, 0, 0, 0.79);
-  }
-  #nbr-notif {
-    color: red;
-    background-color: white;
-    position: fixed;
-    margin-left: 70px;
-    rotate: -7deg;
-  }
-  #icon {
-    width: 40px;
-    height: 40px;
-  }
+
 }
 
 
