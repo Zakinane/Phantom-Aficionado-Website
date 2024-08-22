@@ -58,6 +58,10 @@ button:active {
   background-color: rgb(197, 81, 110);
 }
 
+a{
+  text-decoration: none;
+}
+
 footer {
   position: absolute;
   left: 0;
@@ -107,6 +111,20 @@ footer {
   position: fixed;
   width: 100%;
   z-index: 0;
+}
+
+#nbr-notif {
+  pointer-events: none;
+  color: red;
+  background-color: white;
+  position: fixed;
+  margin-left: 100px;
+  rotate: -7deg;
+  z-index: 100;
+}
+#icon {
+  width: 40px;
+  height: 40px;
 }
 
 
@@ -199,7 +217,7 @@ footer {
   }
 
   .messages-container {
-    padding: 30px; 
+    padding: 20px; 
   }
   .messages {
     margin-top: 100px;
@@ -208,50 +226,72 @@ footer {
     align-items: flex-start;
     padding: 20px;
   }
-  /*ZAK DU FUTUR ESSAYES D'IMAGINER UN GRID AVEC 4 CASES : 1er New 2eme Nm 3eme Photo 4eme txt et tu deplaces avec jsp*/
+
   .message {
     display: grid;
-    grid-template-columns: 100px auto;
+    grid-template-columns: 70px auto;
     color: #fff;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
     padding: 10px;
     position: relative;
   }
   .NEW::before {
     content: "NEW";
+    clip-path: polygon(0 0, 100% 0, 86% 92%, 18% 93%);
     background-color: white;
     color: red;
     padding: 2px 5px;
     position: absolute;
-    left: -20px;
-    top: 0;
-    rotate: -20deg;
-    font-size: 10px;
+    left: 0px;
+    top: 5px;
+    rotate: -10deg;
+    font-size: 13px;
     z-index: 2;
   }
   .NEW {
-    background-color: red; /*Marche pas :(*/
+    /*la les changements blabla*/
   }
   .OLD {
     color: gray;
   }
-
   .username {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    clip-path: polygon(0 0, 92% 17%, 99% 86%, 12% 100%);
     font-family: "Earwig factory";
-    color: white;
-    display: inline-block;
-    padding: 2px 5px;
-    margin-right: 5px;
+    color: black;
+    background-color: white;
+    padding: 2px;
     font-size: 25px;
+    rotate: -7deg;
   }
   .content {
+    font-size: 12px;
+    position:relative;
+    clip-path: polygon(0 16%, 100% 0, 91% 100%, 6% 86%);
     display: flex;
     align-items: center;
     width: 100%;
     height: 100%;
     padding: 5px 20px;
-    background-color: #900a0a;
-    color: #fff;
+    background-color: #fa1111a1;
+    max-width: 100vw;
+    z-index: 12;
+  }
+  .content1{
+    clip-path: polygon(0 21%, 89% 0, 95% 97%, 6% 88%);
+    font-size: 12px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    top: -43px;
+    width: 100%;
+    height: 100%;
+    padding: 5px 20px;
+    rotate: 5deg;
+    background-color: #fa1111a1;
+    max-width: 100vw;
   }
 
   .navbar-container {
@@ -265,9 +305,9 @@ footer {
     background-color: black;
     color: white;
     display: grid;
+    grid-template-columns: 50px 50px 50px 50px;
     justify-items: center;
     padding: 10px;
-    grid-template-columns: 50px 50px 50px 50px;
     width: 200px;
     box-shadow: -1px 42px 381px 150px rgba(0, 0, 0, 0.79);
     -webkit-box-shadow: -1px 42px 381px 150px rgba(0, 0, 0, 0.79);
@@ -510,9 +550,11 @@ footer {
   }
 
   .username {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-family: "Earwig factory";
     color: white;
-    display: inline-block;
     padding: 2px 5px;
     margin-right: 5px;
     font-size: 25px;
@@ -520,18 +562,6 @@ footer {
   .content p {
     margin: 0;
     padding: 0;
-  }
-
-  #nbr-notif {
-    color: red;
-    background-color: white;
-    position: fixed;
-    margin-left: 70px;
-    rotate: -7deg;
-  }
-  #icon {
-    width: 40px;
-    height: 40px;
   }
 }
 

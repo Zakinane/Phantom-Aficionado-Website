@@ -38,7 +38,7 @@ function handleTouchMove(evt) {
   let xDiff = xDown - xUp;
 
   if (xDiff > 0) {
-    if (currentPage < 5) { //incrementer à chaque ajout de page
+    if (currentPage < 4) { //incrementer à chaque ajout de page
       showPage(currentPage + 1);
     }
   } else {
