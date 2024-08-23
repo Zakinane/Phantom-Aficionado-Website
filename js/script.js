@@ -1,4 +1,4 @@
-///////////////////////////////////////////////////////////LES PAGES
+///////////////////////////////////////////////////////////THE PAGES
 let currentPage = 1;
 
 function showPage(pageNumber) {
@@ -38,7 +38,7 @@ function handleTouchMove(evt) {
   let xDiff = xDown - xUp;
 
   if (xDiff > 0) {
-    if (currentPage < 4) { //incrementer à chaque ajout de page
+    if (currentPage < 4) { //to increment for every page added "Phorum - Poll - Notifications - IM"
       showPage(currentPage + 1);
     }
   } else {
