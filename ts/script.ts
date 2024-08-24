@@ -1,55 +1,68 @@
 ///////////////////////////////////////////////////////////THE PAGES
-let currentPage = 1;
+let currentPageIndex: number = 0;
 
-function showPage(pageNumber: number) {
+/**  Switch to the page number in parameter by translating the html content
+ *
+ * Note that the buttons in the footer call this function (see main.html) */
+function showPage(pageIndex: number): void {
   const container: HTMLElement | null = document.querySelector(".container");
+
   if (container) {
-    container.style.transform = `translateX(-${(pageNumber - 1) * 100}vw)`;
-    currentPage = pageNumber;
+    updateIcons(pageIndex);
+
+    // Move all content to move pages
+    container.style.transform = `translateX(-${pageIndex * 100}vw)`;
+
+    currentPageIndex = pageIndex;
   }
-  updateIcons();
 }
 
-function updateIcons() {
+function updateIcons(newActiveIconIndex: number): void {
   const icons = document.querySelectorAll(".icon");
-  icons.forEach((icon, index) => {
-    if (index === currentPage - 1) {
-      icon.classList.add("active");
+
+  icons[currentPageIndex].classList.remove("active");
+  icons[newActiveIconIndex].classList.add("active");
+}
+
+/** Initial position of where a touchEvent was triggered. */
+let initialXTouchPos: number | null = null;
+
+document.addEventListener(
+  "touchstart",
+
+  // Save the initial touch position
+  function (evt: TouchEvent): void {
+    initialXTouchPos = evt.touches[0].clientX;
+  },
+  false
+);
+
+document.addEventListener(
+  "touchmove",
+
+  // Scroll the pages
+  function (evt: TouchEvent): void {
+    if (initialXTouchPos === null) {
+      return;
+    }
+
+    let finalXTouchPos = evt.touches[0].clientX;
+    let xDiff = finalXTouchPos - initialXTouchPos;
+
+    if (xDiff < 0) {
+      if (currentPageIndex < 3) {
+        //to increment for every page added "Phorum - Poll - Notifications - IM"
+        showPage(currentPageIndex + 1);
+      }
     } else {
-      icon.classList.remove("active");
+      if (currentPageIndex > 0) {
+        showPage(currentPageIndex - 1);
+      }
     }
-  });
-}
 
-document.addEventListener("touchstart", handleTouchStart, false);
-document.addEventListener("touchmove", handleTouchMove, false);
-
-let xDown: number | null = null;
-
-function handleTouchStart(evt: TouchEvent) {
-  const firstTouch = evt.touches[0];
-  xDown = firstTouch.clientX;
-}
-
-function handleTouchMove(evt: TouchEvent) {
-  if (!xDown) {
-    return;
-  }
-
-  let xUp = evt.touches[0].clientX;
-  let xDiff = xDown - xUp;
-
-  if (xDiff > 0) {
-    if (currentPage < 4) {
-      //to increment for every page added "Phorum - Poll - Notifications - IM"
-      showPage(currentPage + 1);
-    }
-  } else {
-    if (currentPage > 1) {
-      showPage(currentPage - 1);
-    }
-  }
-  xDown = null;
-}
+    initialXTouchPos = null;
+  },
+  false
+);
 
 ////////////////////////////////////////////////////////Poll of the week
