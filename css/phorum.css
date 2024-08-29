@@ -1,0 +1,169 @@
+#page1 {
+    background-color: rgb(0, 0, 0);
+  
+    .search-bar {
+      clip-path: polygon(0 0, 96% 22%, 94% 77%, 1% 92%);
+      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      background-color: black;
+      width: 90vw;
+      height: 40px;
+      margin: 15px;
+      position: relative;
+      z-index: 2;
+      padding: 20px;
+      box-sizing: border-box;
+      display: flex;
+      align-items: center;
+    }
+    .search-bar input {
+      border: none;
+      background: transparent;
+      color: white;
+      font-size: 18px;
+      width: 100%;
+      outline: none;
+    }
+    .search-bar .search-icon {
+      margin-right: 25px;
+      width: 20px;
+      color: white;
+    }
+    .search-bar-border {
+      position: fixed;
+      clip-path: polygon(0 0, 96% 22%, 94% 77%, 1% 92%);
+      background-color: rgb(78, 78, 78);
+      width: 95vw;
+      height: 55px;
+      margin: 7px;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      box-sizing: border-box;
+      padding: 20px;
+    }
+  
+    .background-title {
+      position: fixed;
+      background-color: black;
+      width: 100vw;
+      height: 143px;
+      z-index: 100;
+    }
+    .title {
+      color: white;
+      position: fixed;
+      width: 40px;
+      font-size: 60px;
+      rotate: -10deg;
+    }
+    #PHORUM {
+      margin: 5px 0px 0px 10px;
+      padding: 30px 0px;
+      position: fixed;
+      top: -20px;
+      left: 0;
+    }
+    .add-btn-container {
+      background-color: white;
+      padding: 5px;
+      position: absolute;
+      top: 70px;
+      right: 20px;
+      z-index: 10000;
+      clip-path: polygon(13% 9%, 100% 0%, 85% 88%, 0% 100%);
+    }
+    .add-btn {
+      background-color: black;
+      padding: 5px;
+      clip-path: polygon(13% 9%, 100% 0%, 85% 88%, 0% 100%);
+    }
+    .messages-container {
+      padding: 20px;
+      overflow-y: auto;
+      scrollbar-color: #760101 #580303;
+      scrollbar-width: thin;
+    }
+    .messages {
+      margin-top: 100px;
+      display: flex;
+      flex-direction: column;
+      padding: 15px;
+      margin-bottom: 150px;
+    }
+  
+    .message {
+      display: grid;
+      grid-template-columns: 70px auto 35px;
+      color: #fff;
+      margin-bottom: 0px;
+      padding: 10px 5px;
+      position: relative;
+    }
+    .NEW::before {
+      content: "NEW";
+      clip-path: polygon(0 0, 100% 0, 86% 92%, 18% 93%);
+      background-color: white;
+      color: red;
+      padding: 2px 5px;
+      position: absolute;
+      left: 0px;
+      top: 5px;
+      rotate: -10deg;
+      font-size: 13px;
+      z-index: 2;
+    }
+    .NEW {
+      /*la les changements blabla*/
+    }
+    .OLD {
+      color: gray;
+    }
+    .username {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      clip-path: polygon(0 0, 92% 17%, 99% 86%, 12% 100%);
+      font-family: "Earwig factory";
+      color: black;
+      background-color: white;
+      padding: 2px;
+      font-size: 25px;
+      rotate: -7deg;
+    }
+    .content {
+      word-break: break-all;
+      font-size: 12px;
+      position: relative;
+      clip-path: polygon(0 16%, 100% 0, 91% 100%, 6% 86%);
+      display: flex;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      padding: 5px 20px;
+      background-color: #fa1111a1;
+      max-width: 100vw;
+      z-index: 10;
+    }
+    .content1 {
+      clip-path: polygon(0 21%, 89% 0, 95% 97%, 6% 88%);
+      font-size: 12px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      top: -43px;
+      width: 100%;
+      height: 100%;
+      padding: 5px 20px;
+      rotate: 5deg;
+      background-color: #fa1111a1;
+      max-width: 100vw;
+    }
+  
+    .nbr-posts {
+      color: rgb(195, 194, 194);
+      font-size: 10px;
+      direction: rtl;
+      display: flex;
+      align-items: center;
+    }
+  }
