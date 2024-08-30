@@ -6,6 +6,6 @@
 <h1><i>❗ STILL IN BETA ❗</i></h2>
 
 <h2>Test the site ! </h2> 
-https://zakinane.github.io/Phantom-Aficionado-Website/
+https://phantom-aficionado-website.firebaseapp.com/
 
 <H6>This site is a fanmade project, all rights reserved to Atlus</H6>
