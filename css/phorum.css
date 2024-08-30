@@ -77,6 +77,9 @@
       padding: 5px;
       clip-path: polygon(13% 9%, 100% 0%, 85% 88%, 0% 100%);
     }
+    #add-btn-phorum{
+      cursor: pointer;
+    }
     .messages-container {
       padding: 20px;
       overflow-y: auto;

@@ -24,7 +24,7 @@
             <div class="search-bar">
               <input type="text" placeholder="Search" />
               <a href="">
-                <img class="search-icon" src="../images/icones/monocle.png"/>
+                <img class="search-icon" src="../images/icons/monocle.png"/>
               </a>
             </div>
           </center>
@@ -37,11 +37,14 @@
           
         </div>
 
-        <div class="add-btn-container">
-          <div class="add-btn">
-            <img width="40px" src="../images/icones/+.png">
+        <a href="addTopic.html">
+          <div class="add-btn-container">
+            <div  class="add-btn" id="add-btn-phorum">
+              <img width="40px" src="../images/icons/+.png">
+            </div>
           </div>
-        </div>
+        </a>
+        
         
         <div class="messages-container">
           <div class="messages">
@@ -164,7 +167,7 @@
 
         <div class="scroll-btn-container">
           <div class="scroll-btn">
-            <img width="40px" src="../images/icones/arrow.png">
+            <img width="40px" src="../images/icons/arrow.png">
           </div>
         </div>
 
@@ -183,7 +186,7 @@
 
         <div class="add-btn-container">
           <div class="add-btn">
-            <img width="40px" src="../images/icones/+.png">
+            <img width="40px" src="../images/icons/+.png">
           </div>
         </div>
 
@@ -297,24 +300,25 @@
       <div class="nav-shadow"></div>
       <div class="nav-icons">
         <img
-          src="../images/icones/PHORUM.PNG"
+          src="../images/icons/PHORUM.PNG"
           class="icon"
           onclick="showPage(0)"
         />
         <img
-          src="../images/icones/POLL.PNG"
+          src="../images/icons/POLL.PNG"
           class="icon"
           onclick="showPage(1)"
         />
         <div id="nbr-notif">99</div>
         <img
-          src="../images/icones/notif.png"
+          src="../images/icons/notif.png"
           class="icon"
           onclick="showPage(2)"
         />
-        <img src="../images/icones/IM.PNG" class="icon" onclick="showPage(3)" />
+        <img src="../images/icons/IM.PNG" class="icon" onclick="showPage(3)" />
       </div>
     </footer>
-    <script src="../js/script.js"></script>
+    <script src="../js/changePageScript.js"></script>
+    <script src="../js/addingPhorum.js" ></script>
   </body>
 </html>

@@ -1,4 +1,3 @@
-///////////////////////////////////////////////////////////THE PAGES
 let currentPageIndex: number = 0;
 
 /**  Switch to the page number in parameter by translating the html content
@@ -65,4 +64,3 @@ document.addEventListener(
   false
 );
 
-////////////////////////////////////////////////////////Poll of the week
