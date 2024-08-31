@@ -4,9 +4,16 @@ js/
 #github
 .github
 
+#node-modules
+noed_modules/
+
 # firebase stuff
 .firebase
 .firebaserc
 firebase.json
 firestore.indexes.json
 firestore.rules
+
+#packages
+package-lock.json
+package.json

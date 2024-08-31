@@ -2,9 +2,8 @@
   body {
       background-image: url(./images/cercleqRougesTst.png);
       background-repeat: no-repeat;
-      background-position: center;
-      background-attachment: fixed;
-      background-size: cover;
+      background-position: center center;
+      background-size: cover; /* Ajuste l'image de fond pour couvrir tout l'écran sans répétition */
       margin: 0;
       height: 100vh;
       width: 100vw;
@@ -18,7 +17,7 @@
   #phansiteLogo {
       width: 300px;
       display: block;
-      margin: 20px auto;
+      margin: 60px auto 20px auto;
   }
 
   .center-content {
@@ -26,27 +25,20 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      height: calc(100vh - 100px); /* Adjust based on logo and credits height */
+      height: calc(100vh - 100px);
+  }
+  #dechire {
+   display: none; 
   }
 
-  .creditsCont {
-      margin-top: 20px;
+  .creditsContainer {
+    position: absolute;
+    bottom: 25%;
   }
 
   .credits {
       width: 30%;
-      display: block;
       margin: 10px auto;
-  }
-
-  a#mainLink {
-      font-size: 24px;
-      font-weight: bold;
-      color: #fff;
-      text-decoration: none;
-      background-color: rgba(0, 0, 0, 0.6);
-      padding: 15px 30px;
-      border-radius: 10px;
   }
 }
 
@@ -61,7 +53,7 @@
   .grid {
     display: grid;
     height: 100vh;
-    grid-template-rows: auto auto;
+    grid-template-rows: auto auto auto;
   }
   #phansiteLogo {
     width: 450px;
@@ -88,9 +80,9 @@
     }
   }
 
-  .creditsCont {
+  .creditsContainer {
     position: fixed;
-    top: 500px;
+    top: 50%;
     width: 100%;
   }
   .credits {
