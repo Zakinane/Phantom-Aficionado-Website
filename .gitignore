@@ -1,9 +1,12 @@
 # Compiled TS files
 js/
 
+#github
+.github
+
 # firebase stuff
 .firebase
-.firebasesrc
+.firebaserc
 firebase.json
 firestore.indexes.json
 firestore.rules
