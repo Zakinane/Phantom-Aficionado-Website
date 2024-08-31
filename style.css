@@ -1,52 +1,59 @@
 @media screen and (max-width: 768px) {
   body {
-    background-image: url(/images/cercleqRougesTst.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    height: 100%;
-    width: 100%;
-    margin: 0px;
+      background-image: url(./images/cercleqRougesTst.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-attachment: fixed;
+      background-size: cover;
+      margin: 0;
+      height: 100vh;
+      width: 100vw;
   }
-  .grid {
-    display: grid;
-    height: 100vh;
-    width: 100vw;
-    grid-template-rows: auto auto auto;
-  }
-  #phansiteLogo {
-    width: 450px;
-    margin-top: 60px;
-    z-index: 100;
-  }
+
   header {
-    align-items: baseline;
-    display: flex;
-    justify-content: center;
+      text-align: center;
+      margin-top: 20px;
   }
-  #dechire {
-    display: none;
+
+  #phansiteLogo {
+      width: 300px;
+      display: block;
+      margin: 20px auto;
+  }
+
+  .center-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: calc(100vh - 100px); /* Adjust based on logo and credits height */
   }
 
   .creditsCont {
-    position: fixed;
-    top: 500px;
-    width: 100%;
+      margin-top: 20px;
   }
+
   .credits {
-    width: 30%;
-    z-index: 101;
+      width: 30%;
+      display: block;
+      margin: 10px auto;
+  }
+
+  a#mainLink {
+      font-size: 24px;
+      font-weight: bold;
+      color: #fff;
+      text-decoration: none;
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 15px 30px;
+      border-radius: 10px;
   }
 }
 
 @media screen and (min-width: 768px) {
   body {
     margin: 0px;
-    background-image: url(images/cercleqRougesTst.png);
+    background-image: url(./images/cercleqRougesTst.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
