@@ -1,0 +1,25 @@
+section {
+  height: 100vh;
+  background-color: #ececec;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.signup-form {
+  min-width: 400px;
+  text-align: center;
+  display: none;
+  
+}
+
+
+#login-form {
+  min-width: 400px;
+  text-align: center;
+}
+
+#user-profile {
+  display:none;
+  min-width:400px;
+}

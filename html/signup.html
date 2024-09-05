@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Signup/Login Form</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.5.0/dist/semantic.min.css">
+    <link rel="stylesheet" href="../css/signup.css">
+</head>
+<body>
+    <section class="ui segment loading" id="main-view">
+
+        <div class="ui segment big" id="user-profile" style="display:none;">
+            <div class="ui card">
+                <div class="content">
+                    <div class="header">User Profile</div>
+                    <div class="meta" id="user-email">
+                        someemail@gmail.com
+                    </div>
+                </div>
+                <div class="extra content">
+                    <button class="ui button red tiny" id="logout-btn">Log out</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- LOGIN FORM -->
+        <div class="ui segment grey" id="login-form">
+            <form class="ui big form">
+                <div class="ui stacked segment">
+                    <div class="ui error message big" id="login-error-message" style="display:none;"></div>
+
+                    <!-- EMAIL -->
+                    <div class="field">
+                        <div class="ui left icon input big">
+                            <i class="mail icon"></i>
+                            <input type="email" placeholder="Email" id="login-email" required />
+                        </div>
+                    </div>
+
+                    <!-- PASSWORD -->
+                    <div class="field">
+                        <div class="ui left icon input big">
+                            <i class="lock icon"></i>
+                            <input type="password" placeholder="Password" id="login-password" required />
+                        </div>
+                    </div>
+                    <button class="ui button blue fluid big" id="login-btn">LOG IN</button>
+                </div>
+            </form>
+            <div class="ui message small big">Need an account? <a id="need-an-account-btn">Sign up</a></div>
+        </div>
+
+        <!-- SIGNUP FORM -->
+        <div class="ui segment grey signup-form" id="signup-form" style="display:none;">
+            <form class="ui form big">
+                <div class="ui stacked segment">
+                    <div class="ui error message" id="error-message" style="display:none;"></div>
+
+                    <!-- EMAIL -->
+                    <div class="field">
+                        <div class="ui left icon input big">
+                            <i class="mail icon"></i>
+                            <input type="email" placeholder="Email" id="email" required />
+                        </div>
+                    </div>
+
+                    <!-- PASSWORD -->
+                    <div class="field">
+                        <div class="ui left icon input big">
+                            <i class="lock icon"></i>
+                            <input type="password" placeholder="Password" id="password" required />
+                        </div>
+                    </div>
+                    <button class="ui button green fluid big" id="signup-btn">CREATE ACCOUNT</button>
+                </div>
+            </form>
+            <div class="ui message small big">Already have an account? <a id="have-an-account-btn">Log In</a></div>
+        </div>
+    </section>
+
+    <!-- JS Files -->
+    <script src="../js/firebase.js" type="module"></script>
+    <script src="../js/authentication.js" type="module"></script>
+</body>
+</html>
