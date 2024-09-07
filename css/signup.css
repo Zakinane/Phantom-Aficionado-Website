@@ -1,3 +1,11 @@
+body{
+  background-color: black;
+  margin: 0px;
+}
+#main-view{
+  background-color: black;
+  margin: 0px;
+}
 section {
   height: 100vh;
   background-color: #ececec;
