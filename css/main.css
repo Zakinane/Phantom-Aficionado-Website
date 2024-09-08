@@ -15,12 +15,13 @@
 }
 
 body {
-  overflow: hidden;
-  width: 100vw;
+  /* overflow: hidden; */
+  /* width: 100vw; */
   height: 100vh;
-  display: flex;
-  margin: 0px;
+  /* display: flex; */
+  /* margin: 0px; */
 }
+
 hr {
   position: relative;
   justify-self: center;
@@ -29,14 +30,14 @@ hr {
   border: red solid 1px;
 }
 .container {
-  display: flex;
-  width: 400vw;
+  /* display: flex; */
+  /* width: 400vw; */
   height: 100vh;
   transition: transform 0.5s ease;
 }
 
 .page {
-  width: 100vw;
+  /* width: 100vw; */
   height: 100vh;
   flex-shrink: 0;
   display: flex;

@@ -2,315 +2,336 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
-    
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
+
     <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon" />
     <link rel="stylesheet" href="../css/main.css" />
-    <link rel="stylesheet" href="../css/phorum.css"/>
-    <link rel="stylesheet" href="../css/poll.css"/>
-    <link rel="stylesheet" href="../css/IM.css"/>
-    <link rel="stylesheet" href="../css/notifications.css"/>
-    <link rel="stylesheet" href="../css/support.css">
-    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon.png"/>
+    <link rel="stylesheet" href="../css/phorum.css" />
+    <link rel="stylesheet" href="../css/poll.css" />
+    <link rel="stylesheet" href="../css/IM.css" />
+    <link rel="stylesheet" href="../css/notifications.css" />
+    <link rel="stylesheet" href="../css/support.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../images/favicon.png"
+    />
 
     <title>Landing</title>
   </head>
   <body>
     <main class="container">
-      <div id="page1" class="page">
-        <div class="background-title">
+      <swiper-container
+        speed="200"
+        loop="true"
+      >
+        <swiper-slide id="page1" class="page">
+          <div class="background-title">
+            <center>
+              <div class="search-bar-border"></div>
+              <div class="search-bar">
+                <input type="text" placeholder="Search" />
+                <a href="">
+                  <img class="search-icon" src="../images/icons/monocle.png" />
+                </a>
+              </div>
+            </center>
 
-          <center>
-            <div class="search-bar-border"></div>
-            <div class="search-bar">
-              <input type="text" placeholder="Search" />
-              <a href="">
-                <img class="search-icon" src="../images/icons/monocle.png"/>
+            <div class="title">
+              <div id="PHORUM">
+                P<span style="color: rgb(222, 15, 15)">H</span>ORUM
+              </div>
+            </div>
+          </div>
+
+          <a href="addTopic.html">
+            <div class="add-btn-container">
+              <div class="add-btn" id="add-btn-phorum">
+                <img width="40px" src="../images/icons/+.png" />
+              </div>
+            </div>
+          </a>
+
+          <div class="messages-container">
+            <div class="messages">
+              <a href="" class="NEW message">
+                <div class="username">Zak</div>
+                <div>
+                  <div class="content">
+                    C'est dure de rendre styléeeeeeeeeeeeeeeeeeeeeeeeeeee
+                  </div>
+                  <div class="content1"></div>
+                </div>
+                <div class="nbr-posts">33<br />posts</div>
+              </a>
+
+              <a href="" class="message">
+                <div class="username">mari</div>
+                <div class="content">Oue</div>
+                <div class="nbr-posts">788<br />posts</div>
+              </a>
+
+              <a href="" class="message">
+                <div class="username">Test</div>
+                <div class="OLD content">TEEEEEEEEEESt TEEETSTSTQ</div>
+                <div class="nbr-posts">11118<br />posts</div>
+              </a>
+
+              <!-- the rest is for testing -->
+
+              <a href="" class="message">
+                <div class="username">Test</div>
+                <div class="OLD content">TEEEEEEEEEESt TEEETSTSTQ</div>
+                <div class="nbr-posts">11118<br />posts</div>
+              </a>
+              <a href="" class="message">
+                <div class="username">Test</div>
+                <div class="OLD content">TEEEEEEEEEESt TEEETSTSTQ</div>
+                <div class="nbr-posts">11118<br />posts</div>
+              </a>
+              <a href="" class="message">
+                <div class="username">Test</div>
+                <div class="OLD content">TEEEEEEEEEESt TEEETSTSTQ</div>
+                <div class="nbr-posts">11118<br />posts</div>
+              </a>
+              <a href="" class="message">
+                <div class="username">Test</div>
+                <div class="OLD content">TEEEEEEEEEESt TEEETSTSTQ</div>
+                <div class="nbr-posts">11118<br />posts</div>
+              </a>
+              <a href="" class="message">
+                <div class="username">Test</div>
+                <div class="OLD content">TEEEEEEEEEESt TEEETSTSTQ</div>
+                <div class="nbr-posts">11118<br />posts</div>
+              </a>
+              <a href="" class="message">
+                <div class="username">Test</div>
+                <div class="OLD content">TEEEEEEEEEESt TEEETSTSTQ</div>
+                <div class="nbr-posts">11118<br />posts</div>
+              </a>
+              <a href="" class="message">
+                <div class="username">Test</div>
+                <div class="OLD content">TEEEEEEEEEESt TEEETSTSTQ</div>
+                <div class="nbr-posts">11118<br />posts</div>
+              </a>
+              <a href="" class="message">
+                <div class="username">Test</div>
+                <div class="OLD content">TEEEEEEEEEESt TEEETSTSTQ</div>
+                <div class="nbr-posts">11118<br />posts</div>
+              </a>
+              <a href="" class="message">
+                <div class="username">Test</div>
+                <div class="OLD content">TEEEEEEEEEESt TEEETSTSTQ</div>
+                <div class="nbr-posts">11118<br />posts</div>
               </a>
             </div>
-          </center>
+          </div>
+        </swiper-slide>
 
+        <swiper-slide id="page2" class="page">
           <div class="title">
-            <div id="PHORUM">
-              P<span style="color: rgb(222, 15, 15)">H</span>ORUM
+            <div class="background-POLL">POLL</div>
+            <div id="POLL">
+              P<span style="color: rgb(222, 15, 15)">O</span>LL
+              <span class="sub-title"
+                >OF THE WEEK
+                <div class="background-WEEK">OF THE WEEK</div>
+              </span>
             </div>
           </div>
-          
-        </div>
+          <div class="poll-container">
+            <div class="poll-question">
+              <p>
+                <span style="font-size: 45px; color: red">Q</span>Do you believe
+                in the Phantom Thieves?
+              </p>
+            </div>
+            <div class="poll-result">
+              <span style="font-size: 45px; color: red">A</span>
+              <span class="poll-percentage" style="font-size: 20px">YES</span>
+              <span class="poll-percentage" style="font-size: 100px">44</span>
+              <span class="poll-percentage" style="font-size: 60px">%</span>
+              <center><hr /></center>
+            </div>
 
-        <a href="addTopic.html">
+            <div class="poll-bar-border">
+              <div class="poll-bar">
+                <div class="poll-bar-yes" style="width: 44%"></div>
+              </div>
+            </div>
+            <div class="poll-options">
+              <div class="poll-btn-border" id="poll-btn-yes">
+                <div class="poll-btn" id="poll-btn-yes">YES</div>
+              </div>
+              <div class="poll-btn-border" id="poll-btn-no">
+                <div class="poll-btn" id="poll-btn-no">NO</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="scroll-btn-container">
+            <div class="scroll-btn">
+              <img width="40px" src="../images/icons/arrow.png" />
+            </div>
+          </div>
+        </swiper-slide>
+
+        <swiper-slide id="page3" class="page">
+          <div class="background-title">
+            <div class="title">
+              <div class="background-IM">IM</div>
+              <div id="IM"><span style="color: rgb(222, 15, 15)">I</span>M</div>
+            </div>
+          </div>
+
           <div class="add-btn-container">
-            <div  class="add-btn" id="add-btn-phorum">
-              <img width="40px" src="../images/icons/+.png">
+            <div class="add-btn">
+              <img width="40px" src="../images/icons/+.png" />
             </div>
           </div>
-        </a>
-        
-        
-        <div class="messages-container">
-          <div class="messages">
-            <a href="" class="NEW message">
-              <div class="username">Zak</div>
-              <div>
-                <div class="content">
-                  C'est dure de rendre styléeeeeeeeeeeeeeeeeeeeeeeeeeee
+
+          <div class="messages-container">
+            <div class="messages">
+              <a href="" class="NEW message">
+                <div class="pp-container">
+                  <img class="pp" src="../images/tmp/Zelda.jpg" />
                 </div>
-                <div class="content1"></div>
-              </div>
-              <div class="nbr-posts">33<br>posts</div>
-            </a>
-
-            <a href="" class="message">
-              <div class="username">mari</div>
-              <div class="content">
-                Oue
-              </div>
-              <div class="nbr-posts">788<br>posts</div>
-            </a>
-
-            <a href="" class="message">
-              <div class="username">Test</div>
-              <div class="OLD content">TEEEEEEEEEESt TEEETSTSTQ</div>
-              <div class="nbr-posts">11118<br>posts</div>
-            </a>
-
-            <!-- the rest is for testing -->
-
-            <a href="" class="message">
-              <div class="username">Test</div>
-              <div class="OLD content">TEEEEEEEEEESt TEEETSTSTQ</div>
-              <div class="nbr-posts">11118<br>posts</div>
-            </a>
-            <a href="" class="message">
-              <div class="username">Test</div>
-              <div class="OLD content">TEEEEEEEEEESt TEEETSTSTQ</div>
-              <div class="nbr-posts">11118<br>posts</div>
-            </a>
-            <a href="" class="message">
-              <div class="username">Test</div>
-              <div class="OLD content">TEEEEEEEEEESt TEEETSTSTQ</div>
-              <div class="nbr-posts">11118<br>posts</div>
-            </a>
-            <a href="" class="message">
-              <div class="username">Test</div>
-              <div class="OLD content">TEEEEEEEEEESt TEEETSTSTQ</div>
-              <div class="nbr-posts">11118<br>posts</div>
-            </a>
-            <a href="" class="message">
-              <div class="username">Test</div>
-              <div class="OLD content">TEEEEEEEEEESt TEEETSTSTQ</div>
-              <div class="nbr-posts">11118<br>posts</div>
-            </a>
-            <a href="" class="message">
-              <div class="username">Test</div>
-              <div class="OLD content">TEEEEEEEEEESt TEEETSTSTQ</div>
-              <div class="nbr-posts">11118<br>posts</div>
-            </a>
-            <a href="" class="message">
-              <div class="username">Test</div>
-              <div class="OLD content">TEEEEEEEEEESt TEEETSTSTQ</div>
-              <div class="nbr-posts">11118<br>posts</div>
-            </a>
-            <a href="" class="message">
-              <div class="username">Test</div>
-              <div class="OLD content">TEEEEEEEEEESt TEEETSTSTQ</div>
-              <div class="nbr-posts">11118<br>posts</div>
-            </a>
-            <a href="" class="message">
-              <div class="username">Test</div>
-              <div class="OLD content">TEEEEEEEEEESt TEEETSTSTQ</div>
-              <div class="nbr-posts">11118<br>posts</div>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div id="page2" class="page">
-        <div class="title">
-          <div class="background-POLL">POLL</div>
-          <div id="POLL">
-            P<span style="color: rgb(222, 15, 15)">O</span>LL
-            <span class="sub-title"
-              >OF THE WEEK
-              <div class="background-WEEK">OF THE WEEK</div>
-            </span>
-          </div>
-        </div>
-        <div class="poll-container">
-          <div class="poll-question">
-            <p>
-              <span style="font-size: 45px; color: red">Q</span>Do you believe
-              in the Phantom Thieves?
-            </p>
-          </div>
-          <div class="poll-result">
-            <span style="font-size: 45px; color: red">A</span>
-            <span class="poll-percentage" style="font-size: 20px">YES</span>
-            <span class="poll-percentage" style="font-size: 100px">44</span>
-            <span class="poll-percentage" style="font-size: 60px">%</span>
-            <center><hr /></center>
-          </div>
-
-          <div class="poll-bar-border">
-            <div class="poll-bar">
-              <div class="poll-bar-yes" style="width: 44%"></div>
-            </div>
-          </div>
-          <div class="poll-options">
-            <div class="poll-btn-border" id="poll-btn-yes">
-              <div class="poll-btn" id="poll-btn-yes">YES</div>
-            </div>
-            <div class="poll-btn-border" id="poll-btn-no">
-              <div class="poll-btn" id="poll-btn-no">NO</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="scroll-btn-container">
-          <div class="scroll-btn">
-            <img width="40px" src="../images/icons/arrow.png">
-          </div>
-        </div>
-
-      </div>
-
-      <div id="page3" class="page">
-        <div class="background-title">
-          <div class="title">
-            <div class="background-IM">IM</div>
-            <div id="IM"><span style="color: rgb(222, 15, 15)">I</span>M</div>
-          </div>
-        </div>
-
-        <div class="add-btn-container">
-          <div class="add-btn">
-            <img width="40px" src="../images/icons/+.png">
-          </div>
-        </div>
-
-        <div class="messages-container">
-          <div class="messages">
-            <a href="" class="NEW message">
-              <div class="pp-container">
-                <img class="pp" src="../images/tmp/Zelda.jpg">
-              </div>
-              <div class="username">Zak</div>
-              <div class="username-background">Zak</div>
-              <div>
-                <div class="content">
-                  C'est dure de rendre styléeeeeeeeeeeeeeeeeeeeeeeeeeee
+                <div class="username">Zak</div>
+                <div class="username-background">Zak</div>
+                <div>
+                  <div class="content">
+                    C'est dure de rendre styléeeeeeeeeeeeeeeeeeeeeeeeeeee
+                  </div>
+                  <div class="content1"></div>
                 </div>
-                <div class="content1"></div>
-              </div>
-            </a>
+              </a>
 
-            <a href="" class="message">
-              <div class="pp-container">
-                <img class="pp" src="../images/tmp/SaukaSchoolSimGTA.jpg">
-              </div>
-              <div class="username">Marinoune</div>
-              <div class="username-background">Marinoune</div>
-              <div class="content">
-                Oue
-              </div>
-            </a>
+              <a href="" class="message">
+                <div class="pp-container">
+                  <img class="pp" src="../images/tmp/SaukaSchoolSimGTA.jpg" />
+                </div>
+                <div class="username">Marinoune</div>
+                <div class="username-background">Marinoune</div>
+                <div class="content">Oue</div>
+              </a>
 
-            <a href="" class="message">
-              <div class="pp-container">
-                <img class="pp" src="../images/favicon.png">
-              </div>
-              <div class="username">Test</div>
-              <div class="username-background">Test</div>
-              <div class="OLD content">TEEEEEEEEEESt TEEETSTSTQ</div>
-            </a>
+              <a href="" class="message">
+                <div class="pp-container">
+                  <img class="pp" src="../images/favicon.png" />
+                </div>
+                <div class="username">Test</div>
+                <div class="username-background">Test</div>
+                <div class="OLD content">TEEEEEEEEEESt TEEETSTSTQ</div>
+              </a>
 
+              <a href="" class="message">
+                <div class="pp-container">
+                  <img class="pp" src="../images/favicon.png" />
+                </div>
+                <div class="username">Test</div>
+                <div class="username-background">Test</div>
+                <div class="OLD content">TEEEEEEEEEESt TEEETSTSTQ</div>
+              </a>
 
-            <a href="" class="message">
-              <div class="pp-container">
-                <img class="pp" src="../images/favicon.png">
-              </div>
-              <div class="username">Test</div>
-              <div class="username-background">Test</div>
-              <div class="OLD content">TEEEEEEEEEESt TEEETSTSTQ</div>
-            </a>
-  
-            <a href="" class="message">
-              <div class="pp-container">
-                <img class="pp" src="../images/favicon.png">
-              </div>
-              <div class="username">Test</div>
-              <div class="username-background">Test</div>
-              <div class="OLD content">TEEEEEEEEEESt TEEETSTSTQ</div>
-            </a>
-  
-            <a href="" class="message">
-              <div class="pp-container">
-                <img class="pp" src="../images/favicon.png">
-              </div>
-              <div class="username">Test</div>
-              <div class="username-background">Test</div>
-              <div class="OLD content">TEEEEEEEEEESt TEEETSTSTQ</div>
-            </a>
-  
-            <a href="" class="message">
-              <div class="pp-container">
-                <img class="pp" src="../images/favicon.png">
-              </div>
-              <div class="username">Test</div>
-              <div class="username-background">Test</div>
-              <div class="OLD content">TEEEEEEEEEESt TEEETSTSTQ</div>
-            </a>
-  
-            <a href="" class="message">
-              <div class="pp-container">
-                <img class="pp" src="../images/favicon.png">
-              </div>
-              <div class="username">Test</div>
-              <div class="username-background">Test</div>
-              <div class="OLD content">TEEEEEEEEEESt TEEETSTSTQ</div>
-            </a>
-  
-            <a href="" class="message">
-              <div class="pp-container">
-                <img class="pp" src="../images/favicon.png">
-              </div>
-              <div class="username">Test</div>
-              <div class="username-background">Test</div>
-              <div class="OLD content">TEEEEEEEEEESt TEEETSTSTQ</div>
-            </a>
-  
-            <a href="" class="message">
-              <div class="pp-container">
-                <img class="pp" src="../images/favicon.png">
-              </div>
-              <div class="username">Test</div>
-              <div class="username-background">Test</div>
-              <div class="OLD content">TEEEEEEEEEESt TEEETSTSTQ</div>
-            </a>
+              <a href="" class="message">
+                <div class="pp-container">
+                  <img class="pp" src="../images/favicon.png" />
+                </div>
+                <div class="username">Test</div>
+                <div class="username-background">Test</div>
+                <div class="OLD content">TEEEEEEEEEESt TEEETSTSTQ</div>
+              </a>
 
+              <a href="" class="message">
+                <div class="pp-container">
+                  <img class="pp" src="../images/favicon.png" />
+                </div>
+                <div class="username">Test</div>
+                <div class="username-background">Test</div>
+                <div class="OLD content">TEEEEEEEEEESt TEEETSTSTQ</div>
+              </a>
 
+              <a href="" class="message">
+                <div class="pp-container">
+                  <img class="pp" src="../images/favicon.png" />
+                </div>
+                <div class="username">Test</div>
+                <div class="username-background">Test</div>
+                <div class="OLD content">TEEEEEEEEEESt TEEETSTSTQ</div>
+              </a>
+
+              <a href="" class="message">
+                <div class="pp-container">
+                  <img class="pp" src="../images/favicon.png" />
+                </div>
+                <div class="username">Test</div>
+                <div class="username-background">Test</div>
+                <div class="OLD content">TEEEEEEEEEESt TEEETSTSTQ</div>
+              </a>
+
+              <a href="" class="message">
+                <div class="pp-container">
+                  <img class="pp" src="../images/favicon.png" />
+                </div>
+                <div class="username">Test</div>
+                <div class="username-background">Test</div>
+                <div class="OLD content">TEEEEEEEEEESt TEEETSTSTQ</div>
+              </a>
+
+              <a href="" class="message">
+                <div class="pp-container">
+                  <img class="pp" src="../images/favicon.png" />
+                </div>
+                <div class="username">Test</div>
+                <div class="username-background">Test</div>
+                <div class="OLD content">TEEEEEEEEEESt TEEETSTSTQ</div>
+              </a>
+            </div>
           </div>
-        </div>
-      </div>
+        </swiper-slide>
 
-      <div id="page4" class="page">notifications</div>
-      
-      <div id="page5" class="page">Support us!</div>
+        <swiper-slide id="page4" class="page">notifications</swiper-slide>
+
+        <swiper-slide id="page5" class="page">Support us!</swiper-slide>
+      </swiper-container>
     </main>
     <footer>
       <div class="nav-border"></div>
       <div class="nav-shadow"></div>
       <div class="nav-icons">
-        <img src="../images/icons/PHORUM.PNG" class="icon" onclick="showPage(0)"/>
-        <img src="../images/icons/POLL.PNG" class="icon" onclick="showPage(1)"/>
+        <img
+          src="../images/icons/PHORUM.PNG"
+          class="icon"
+          onclick="showPage(0)"
+        />
+        <img
+          src="../images/icons/POLL.PNG"
+          class="icon"
+          onclick="showPage(1)"
+        />
         <div id="nbr-notif-IM">99</div>
-        <img src="../images/icons/IM.png" class="icon" onclick="showPage(2)"/>
+        <img src="../images/icons/IM.png" class="icon" onclick="showPage(2)" />
         <div id="nbr-notif-notif">99</div>
-        <img src="../images/icons/notif.png" class="icon" onclick="showPage(3)"/>
-        <img src="../images/icons/heart.png" class="icon" onclick="showPage(4)"/>
+        <img
+          src="../images/icons/notif.png"
+          class="icon"
+          onclick="showPage(3)"
+        />
+        <img
+          src="../images/icons/heart.png"
+          class="icon"
+          onclick="showPage(4)"
+        />
       </div>
     </footer>
-    <script src="../js/changePageScript.js"></script>
-    <script src="../js/addingPhorum.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
   </body>
 </html>

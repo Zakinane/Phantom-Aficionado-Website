@@ -1,66 +1,70 @@
-let currentPageIndex: number = 0;
+// // import function to register Swiper custom elements
+// import { register } from "swiper/element/bundle";
+// // register Swiper custom elements
+// register();
 
-/**  Switch to the page number in parameter by translating the html content
- *
- * Note that the buttons in the footer call this function (see main.html) */
-function showPage(pageIndex: number): void {
-  const container: HTMLElement | null = document.querySelector(".container");
+// let currentPageIndex: number = 0;
 
-  if (container) {
-    updateIcons(pageIndex);
+// /**  Switch to the page number in parameter by translating the html content
+//  *
+//  * Note that the buttons in the footer call this function (see main.html) */
+// function showPage(pageIndex: number): void {
+//   const container: HTMLElement | null = document.querySelector(".container");
 
-    // Move all content to move pages
-    container.style.transform = `translateX(-${pageIndex * 100}vw)`;
+//   if (container) {
+//     updateIcons(pageIndex);
 
-    currentPageIndex = pageIndex;
-  }
-}
+//     // Move all content to move pages
+//     container.style.transform = `translateX(-${pageIndex * 100}vw)`;
 
-function updateIcons(newActiveIconIndex: number): void {
-  const icons = document.querySelectorAll(".icon");
+//     currentPageIndex = pageIndex;
+//   }
+// }
 
-  icons[currentPageIndex].classList.remove("active");
-  icons[newActiveIconIndex].classList.add("active");
-}
+// function updateIcons(newActiveIconIndex: number): void {
+//   const icons = document.querySelectorAll(".icon");
 
-/** Initial position of where a touchEvent was triggered. */
-let initialXTouchPos: number | null = null;
+//   icons[currentPageIndex].classList.remove("active");
+//   icons[newActiveIconIndex].classList.add("active");
+// }
 
-document.addEventListener(
-  "touchstart",
+// /** Initial position of where a touchEvent was triggered. */
+// let initialXTouchPos: number | null = null;
 
-  // Save the initial touch position
-  function (evt: TouchEvent): void {
-    initialXTouchPos = evt.touches[0].clientX;
-  },
-  false
-);
+// document.addEventListener(
+//   "touchstart",
 
-document.addEventListener(
-  "touchmove",
+//   // Save the initial touch position
+//   function (evt: TouchEvent): void {
+//     initialXTouchPos = evt.touches[0].clientX;
+//   },
+//   false
+// );
 
-  // Scroll the pages
-  function (evt: TouchEvent): void {
-    if (initialXTouchPos === null) {
-      return;
-    }
+// document.addEventListener(
+//   "touchmove",
 
-    let finalXTouchPos = evt.touches[0].clientX;
-    let xDiff = finalXTouchPos - initialXTouchPos;
+//   // Scroll the pages
+//   function (evt: TouchEvent): void {
+//     if (initialXTouchPos === null) {
+//       return;
+//     }
 
-    if (xDiff < 0) {
-      if (currentPageIndex < 4) {
-        //to increment for every page added "Phorum - Poll - Notifications - IM"
-        showPage(currentPageIndex + 1);
-      }
-    } else {
-      if (currentPageIndex > 0) {
-        showPage(currentPageIndex - 1);
-      }
-    }
+//     let finalXTouchPos = evt.touches[0].clientX;
+//     let xDiff = finalXTouchPos - initialXTouchPos;
 
-    initialXTouchPos = null;
-  },
-  false
-);
+//     if (xDiff < 0) {
+//       if (currentPageIndex < 4) {
+//         //to increment for every page added "Phorum - Poll - Notifications - IM"
+//         showPage(currentPageIndex + 1);
+//       }
+//     } else {
+//       if (currentPageIndex > 0) {
+//         showPage(currentPageIndex - 1);
+//       }
+//     }
 
+//     initialXTouchPos = null;
+//   },
+//   false
+// );
