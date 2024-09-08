@@ -49,7 +49,7 @@ document.addEventListener(
     let xDiff = finalXTouchPos - initialXTouchPos;
 
     if (xDiff < 0) {
-      if (currentPageIndex < 3) {
+      if (currentPageIndex < 4) {
         //to increment for every page added "Phorum - Poll - Notifications - IM"
         showPage(currentPageIndex + 1);
       }

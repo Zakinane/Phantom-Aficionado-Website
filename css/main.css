@@ -100,7 +100,7 @@ footer {
   clip-path: polygon(6% 6%, 92% 0, 98% 96%, 7% 90%);
   background-color: white;
   position: fixed;
-  width: 230px;
+  width: 260px;
   height: 60px;
   bottom: 5px;
   z-index: 11;
@@ -112,12 +112,21 @@ footer {
   width: 100%;
 }
 
-#nbr-notif {
+#nbr-notif-IM {
   pointer-events: none;
   color: red;
   background-color: white;
   position: fixed;
   margin-left: 100px;
+  rotate: -7deg;
+  z-index: 100;
+}
+#nbr-notif-notif {
+  pointer-events: none;
+  color: red;
+  background-color: white;
+  position: fixed;
+  margin-left: 140px;
   rotate: -7deg;
   z-index: 100;
 }

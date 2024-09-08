@@ -8,8 +8,9 @@
     <link rel="stylesheet" href="../css/main.css" />
     <link rel="stylesheet" href="../css/phorum.css"/>
     <link rel="stylesheet" href="../css/poll.css"/>
-    <link rel="stylesheet" href="../css/notifications.css"/>
     <link rel="stylesheet" href="../css/IM.css"/>
+    <link rel="stylesheet" href="../css/notifications.css"/>
+    <link rel="stylesheet" href="../css/support.css">
     <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon.png"/>
 
     <title>Landing</title>
@@ -173,10 +174,7 @@
 
       </div>
 
-      <div id="page3" class="page">notifications</div>
-
-
-      <div id="page4" class="page">
+      <div id="page3" class="page">
         <div class="background-title">
           <div class="title">
             <div class="background-IM">IM</div>
@@ -294,31 +292,25 @@
           </div>
         </div>
       </div>
+
+      <div id="page4" class="page">notifications</div>
+      
+      <div id="page5" class="page">Support us!</div>
     </main>
     <footer>
       <div class="nav-border"></div>
       <div class="nav-shadow"></div>
       <div class="nav-icons">
-        <img
-          src="../images/icons/PHORUM.PNG"
-          class="icon"
-          onclick="showPage(0)"
-        />
-        <img
-          src="../images/icons/POLL.PNG"
-          class="icon"
-          onclick="showPage(1)"
-        />
-        <div id="nbr-notif">99</div>
-        <img
-          src="../images/icons/notif.png"
-          class="icon"
-          onclick="showPage(2)"
-        />
-        <img src="../images/icons/IM.PNG" class="icon" onclick="showPage(3)" />
+        <img src="../images/icons/PHORUM.PNG" class="icon" onclick="showPage(0)"/>
+        <img src="../images/icons/POLL.PNG" class="icon" onclick="showPage(1)"/>
+        <div id="nbr-notif-IM">99</div>
+        <img src="../images/icons/IM.png" class="icon" onclick="showPage(2)"/>
+        <div id="nbr-notif-notif">99</div>
+        <img src="../images/icons/notif.png" class="icon" onclick="showPage(3)"/>
+        <img src="../images/icons/heart.png" class="icon" onclick="showPage(4)"/>
       </div>
     </footer>
     <script src="../js/changePageScript.js"></script>
-    <script src="../js/addingPhorum.js" ></script>
+    <script src="../js/addingPhorum.js"></script>
   </body>
 </html>
