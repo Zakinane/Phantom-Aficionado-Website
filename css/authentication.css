@@ -1,35 +1,129 @@
-body{
+@font-face {
+  font-family: "Earwig factory";
+  src: url(../refs/earwig\ factory\ rg.otf);
+}
+*{
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+body {
   background-color: black;
   margin: 0px;
 }
-#main-view{
+
+#main-view {
   background-color: black;
-  background-image: url("../images/test.png");
+  background-image: url("../images/signup.png");
   background-position: center;
-  margin: 0px;
-}
-section {
+  background-size: cover;
+  background-repeat: no-repeat;
   height: 100vh;
-  background-color: #ececec;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.signup-form {
-  min-width: 400px;
-  text-align: center;
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 25px;
+  background-color: #000000f5;
+  clip-path: polygon(6% 5%, 100% 0%, 93% 90%, 0% 100%);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 230px;
+}
+.content{
+  color: white;
+}
+.field {
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.field-container.email{
+  padding: 10px;
+  background-color: black;
+  clip-path: polygon(0 0, 96% 18%, 95% 77%, 4% 100%);
+}
+#email ,#login-email{
+  clip-path: polygon(0 0, 96% 18%, 95% 77%, 4% 100%);
+}
+.field-container.password{
+  padding: 10px;
+  background-color: black;
+  clip-path: polygon(0 16%, 90% 0, 96% 98%, 0 81%);
+}
+#password ,#login-password{
+  clip-path: polygon(0 16%, 90% 0, 96% 98%, 0 81%);
+
+}
+
+.button {
+  background-color: #000000;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  width:100%;
+  height: 50px;
+}
+.button-container.blue {
+  background-color: #007BFF;
+  clip-path: polygon(10% 1%, 90% 19%, 86% 55%, 99% 79%, 67% 100%, 67% 76%, 0 71%);
+  width: 205px;
+  height: 55px;
+  padding: 10px;
+}
+
+.button.red {
+  background-color: #FF0000;
+}
+
+.button-container.green {
+  background-color: #28A745;
+  clip-path: polygon(12% 18%, 92% 0, 100% 72%, 35% 76%, 30% 97%, 6% 78%, 16% 56%);
+  padding: 15px;
+}
+#signup-btn{
+  clip-path: polygon(12% 18%, 92% 0, 100% 72%, 35% 76%, 30% 97%, 6% 78%, 16% 56%);
+}
+#login-btn{
+  clip-path: polygon(10% 1%, 90% 19%, 86% 55%, 99% 79%, 67% 100%, 67% 76%, 0 71%);
+}
+
+.message {
+  rotate: -7deg;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #000000;
+}
+
+.message a {
+  color: #007BFF;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.error-message {
+  color: rgb(255, 35, 35);
+  font-size: 14px;
+  margin-bottom: 15px;
   display: none;
-  
 }
 
-
-#login-form {
-  min-width: 400px;
-  text-align: center;
+#signup-form, #login-form {
+  display: none;
+  clip-path: polygon(6% 5%, 100% 0%, 93% 90%, 0% 100%);
+  background-color: #ffffffe9;
+  padding: 30px;
 }
 
-#user-profile {
-  display:none;
-  min-width:400px;
+#login-form.active, #signup-form.active {
+  display: block;
 }
