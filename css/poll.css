@@ -116,6 +116,10 @@
     #poll-btn-no {
       clip-path: polygon(0 16%, 100% 0, 96% 98%, 0 81%);
     }
+    .scroll-message{
+      position: absolute;
+      bottom: 130px;
+    }
     .scroll-btn-container {
       background-color: white;
       padding: 5px;

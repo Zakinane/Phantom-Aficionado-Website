@@ -18,12 +18,28 @@
   <body>
     <main class="container">
       <div id="page1" class="page">
-        <div class="background-title">
 
+        <div class="add-topic-page" id="add-topic-page">
+          <img id="close-topic-btn" src="../images/icons/X.png" onclick="closeAddTopicPage()">
+          <div class="add-topic-pop-up">
+            <h2>Create a new Topic:</h2>
+            <form id="add-topic-form" autocomplete="off">
+              <label for="topic-title">Topic's title:</label>
+              <input type="text" id="topic-title" name="topic-title" required>
+              
+              <label for="topic-content">Content:</label>
+              <textarea id="topic-content" name="topic-content" rows="4" required></textarea>
+              
+              <button type="submit">Publish</button>
+            </form>
+          </div>
+        </div>
+
+        <div class="background-title">
           <center>
             <div class="search-bar-border"></div>
             <div class="search-bar">
-              <input type="text" placeholder="Search" />
+              <input type="text" placeholder="Search"/>
               <a href="">
                 <img class="search-icon" src="../images/icons/monocle.png"/>
               </a>
@@ -38,19 +54,17 @@
           
         </div>
 
-        <a href="addTopic.html">
           <div class="add-btn-container">
-            <div  class="add-btn" id="add-btn-phorum">
+            <div class="add-btn" id="add-btn-phorum" onclick="openAddTopicPage()">
               <img width="40px" src="../images/icons/+.png">
             </div>
           </div>
-        </a>
         
         
         <div class="messages-container">
           <div class="messages">
             <a href="" class="NEW message">
-              <div class="username">Zak</div>
+              <div class="username">Talk</div>
               <div>
                 <div class="content">
                   C'est dure de rendre styléeeeeeeeeeeeeeeeeeeeeeeeeeee
@@ -61,7 +75,7 @@
             </a>
 
             <a href="" class="message">
-              <div class="username">mari</div>
+              <div class="username">Meme</div>
               <div class="content">
                 Oue
               </div>
@@ -69,7 +83,7 @@
             </a>
 
             <a href="" class="message">
-              <div class="username">Test</div>
+              <div class="username">Other</div>
               <div class="OLD content">TEEEEEEEEEESt TEEETSTSTQ</div>
               <div class="nbr-posts">11118<br>posts</div>
             </a>
@@ -77,7 +91,7 @@
             <!-- the rest is for testing -->
 
             <a href="" class="message">
-              <div class="username">Test</div>
+              <div class="username">RP</div>
               <div class="OLD content">TEEEEEEEEEESt TEEETSTSTQ</div>
               <div class="nbr-posts">11118<br>posts</div>
             </a>
@@ -166,6 +180,7 @@
           </div>
         </div>
 
+        <div class="scroll-message">Scroll to read comments</div>
         <div class="scroll-btn-container">
           <div class="scroll-btn">
             <img width="40px" src="../images/icons/arrow.png">
@@ -310,7 +325,7 @@
         <img src="../images/icons/heart.png" class="icon" onclick="showPage(4)"/>
       </div>
     </footer>
-    <script src="../js/changePageScript.js"></script>
-    <script src="../js/addingPhorum.js"></script>
+    <script src="../js/changePage.js"></script>
+    <script src="../js/addTopics.js"></script>
   </body>
 </html>

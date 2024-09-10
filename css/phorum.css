@@ -1,6 +1,64 @@
 #page1 {
     background-color: rgb(0, 0, 0);
   
+    .add-topic-page {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.597);
+      display: none;
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+    }
+    
+    .add-topic-pop-up {
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+      width: 300px;
+    }
+    
+    #close-topic-btn {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      cursor: pointer;
+    }
+    
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    label {
+      margin-top: 10px;
+    }
+    
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+    }
+    
+    button {
+      margin-top: 20px;
+      padding: 10px;
+      background-color: red;
+      color: white;
+      border: none;
+      cursor: pointer;
+      width: auto;
+    }
+    
+    button:hover {
+      background-color: #0056b3;
+    }
+    
+
     .search-bar {
       clip-path: polygon(0 0, 96% 22%, 94% 77%, 1% 92%);
       font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
@@ -47,7 +105,7 @@
       background-color: black;
       width: 100vw;
       height: 143px;
-      z-index: 100;
+      z-index: 12;
     }
     .title {
       color: white;
@@ -69,7 +127,7 @@
       position: absolute;
       top: 70px;
       right: 20px;
-      z-index: 10000;
+      z-index: 13;
       clip-path: polygon(13% 9%, 100% 0%, 85% 88%, 0% 100%);
     }
     .add-btn {
@@ -130,7 +188,7 @@
       color: black;
       background-color: white;
       padding: 2px;
-      font-size: 25px;
+      font-size: 20px;
       rotate: -7deg;
     }
     .content {
